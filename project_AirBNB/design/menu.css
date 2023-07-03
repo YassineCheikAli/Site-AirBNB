@@ -1,0 +1,836 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #FAF9F9;
+    height: 100vh;
+}
+
+
+.container {
+    position: relative;
+    max-width: 100%;
+    text-align: center; /* Ajout de cette ligne pour centrer l'image horizontalement */
+}
+
+img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-family: "Josefin Sans";
+    color: #FAF9F9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 50px;
+    margin: 0; /* Ajout de cette ligne pour supprimer la marge par défaut du h1 */
+}
+
+
+/*
+.button {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+*/
+
+/* Media queries */
+@media (max-width: 770px) {
+    h1 {
+        font-size: 18px;
+    }
+
+}
+
+
+.inscription{
+    font-size: 15px;
+    font-family: "Josefin Sans";
+    background-color: #FFC914;
+    border: none;
+    border-radius: 15px;
+    height: 35px;
+    width: 86px;
+}
+  
+.container button.inscription {
+    position: absolute;
+    top: 40px;
+    right: 90px;
+}
+
+.pseudo{
+    font-size: 20px;
+    font-family: "Josefin Sans";
+    color: #000000;
+}
+
+.container p.pseudo {
+    position: fixed;
+    top: 50px;
+    right: 120px;
+}
+
+@media screen and (max-width: 770px) {
+    .pseudo {
+        display: none;
+    }
+}
+
+.connexion{
+    font-size: 15px;
+    font-family: "Josefin Sans";
+    color: #FAF9F9;
+}
+
+.container p.connexion {
+    position: absolute;
+    top: 50px;
+    right: 231px;
+}
+
+/* Nav Bar */
+
+.navbar {
+    position: sticky;
+    top: 30px;
+    width: 50%;
+    background-color: rgb(122, 122, 122);
+    border-radius: 15px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.3s ease-in-out;
+    margin: 0 auto; /* Ajout de la propriété pour centrer horizontalement */
+}
+  
+.navbar input {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+  
+.navbar button {
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: "Josefin Sans";
+    background-color: #FFC914;
+    border: none;
+    border-radius: 15px;
+    height: 35px;
+    width: 86px;
+    margin-right: 10px;
+}
+  
+.navbar input[type="text"],
+.nav button {
+    height: 35px;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+}
+  
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    margin-right: 5px;
+}
+  
+.custom-input {
+    flex: 1;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 603px) {
+    .navbar,
+    .custom-input,
+    .search {
+      width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+}
+  
+.custom-input {
+      flex: none;
+      margin-right: 0;
+    }
+}
+
+/* titre */ 
+
+h2 {
+    color: #000000;
+    font-family: "Josefin Sans";
+    font-size: 30px;
+}
+  
+
+.title .horizontal-line {
+    position: absolute;
+    margin-top: 12px;
+    width: 700px;
+    left: 20px;    
+    border: 1px solid #000000; 
+}
+
+.title .horizontal-line_2{
+    position: absolute;
+    margin-top: 12px;
+    width: 700px;
+    right: 20px;    
+    border: 1px solid #000000; 
+}
+
+.title {
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    z-index: 998; /* Assurez-vous que le z-index est inférieur à celui de la barre de navigation */
+
+}
+  
+.title h2{
+    font-family: "Josefin Sans";
+    color: black;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1600px) {
+    .title {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .horizontal-line, .horizontal-line_2 {
+      margin: 5px 0;
+      display: none;
+    }
+}
+  
+
+
+
+
+
+/* Offre numéro 1 */ 
+
+
+.galerie {
+    display: flex;
+    justify-content: center;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.item {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: "Josefin Sans";
+    color: #000000;
+}
+
+.price {
+    margin-top: auto;
+    font-family: "Josefin Sans";
+    color: #000000;
+}
+
+.detail {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.detail p {
+    margin-right: 15px;
+    margin-left: 15px;
+    color: #989798;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+
+}
+
+.ligne-verticale {
+    width: 1px;
+    height: 20px; /* Hauteur de la ligne */
+    background-color: #989798; /* Couleur de la ligne */
+}
+
+
+.check {
+    margin-top: 30px;
+    border: none;
+    font-family: "Josefin Sans";
+    font-size: 22px;
+    background-color: #FFC914;
+    border-radius: 15px;
+    width: 375px;
+    height: 40px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .galerie {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .item {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+    img {
+    width: 100%; /* Ajuste la largeur de l'image à 100% */
+
+    max-width: none; /* Supprime la largeur maximale définie précédemment */
+    }
+    
+    .item {
+      margin-bottom: 20px;
+      margin-right: 45px; /* Espacement entre les images */
+      margin-left: 45px; /* Espacement entre les images */
+    }
+}
+
+/* Nos Services */
+
+.all_service {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* Service */ 
+
+.service{
+    margin-top: 50px;
+    width: 228px;
+}
+
+
+h4 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.info2 {
+    margin-top: 25px;
+    font-family: "Josefin Sans";
+    color: #000000;
+
+}
+
+.content {
+    margin-top: 15px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: light;
+    text-align: center;
+}
+
+/* Car */ 
+
+
+.car_service {
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 228px;
+}
+
+
+/* Information */
+
+.information {
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 228px;
+}
+
+.maintenance {
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 228px;
+}
+
+.car_service .notif {
+    margin-left: 60px;
+}
+
+.information .notif {
+    margin-left: 60px;
+}
+
+.maintenance .notif {
+    margin-left: 60px;
+}
+
+.service .notif {
+    margin-left: 60px;
+}
+
+
+
+
+@media screen and (max-width: 1170px){    
+    .all_service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .service{
+        align-items: center;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .car_service{
+        align-items: center;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .information{
+        align-items: center;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .maintenance{
+        align-items: center;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .galerie {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .item {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Offre numéro 1 */ 
+
+
+.home {
+    display: flex;
+    justify-content: center;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.desciption {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.description img {
+    margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: "Josefin Sans";
+    color: #000000;
+}
+
+.price {
+    margin-top: auto;
+    font-family: "Josefin Sans";
+    color: #000000;
+}
+
+.detail {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.detail svg,
+.detail p {
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #989798;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+
+}
+
+.ligne-verticale {
+    width: 1px;
+    height: 20px; /* Hauteur de la ligne */
+    background-color: #989798; /* Couleur de la ligne */
+}
+
+
+.check {
+    margin-top: 30px;
+    border: none;
+    font-family: "Josefin Sans";
+    font-size: 22px;
+    background-color: #FFC914;
+    border-radius: 15px;
+    width: 375px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .description {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    img {
+        width: 100%; /* Ajuste la largeur de l'image à 100% */
+
+        max-width: none; /* Supprime la largeur maximale définie précédemment */
+    }
+    
+    .description {
+      margin-bottom: 20px;
+      margin-right: 60px; /* Espacement entre les images */
+      margin-left: 60px; /* Espacement entre les images */
+    }
+}
+
+.galerie {
+    display: flex;
+    justify-content: center;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.item {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.comment_all img {
+    max-width: 100%;
+    height: auto;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: "Josefin Sans";
+    color: #000000;
+}
+
+.price {
+    margin-top: auto;
+    font-family: "Josefin Sans";
+    color: #000000;
+}
+
+.detail {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.detail svg,
+.detail p {
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #989798;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+
+}
+
+.ligne-verticale {
+    width: 1px;
+    height: 20px; /* Hauteur de la ligne */
+    background-color: #989798; /* Couleur de la ligne */
+}
+
+
+.check {
+    margin-top: 30px;
+    border: none;
+    font-family: "Josefin Sans";
+    font-size: 22px;
+    background-color: #FFC914;
+    border-radius: 15px;
+    width: 375px;
+    height: 40px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .galerie {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .item {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+    img {
+    width: 100%; /* Ajuste la largeur de l'image à 100% */
+
+    max-width: none; /* Supprime la largeur maximale définie précédemment */
+    }
+    
+    .item {
+      margin-bottom: 20px;
+      margin-right: 45px; /* Espacement entre les images */
+      margin-left: 45px; /* Espacement entre les images */
+    }
+}
+
+/* Témoignages */
+
+
+
+.comment_all {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.commentaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+
+.commentaire_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 200px;
+}
+
+  
+.comment_all .profil {
+    height: 100px;
+    width: 90px;
+}
+  
+.nom {
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 200px;
+    margin-bottom: 20px;
+}
+  
+.avis {
+    font-family: "Josefin Sans";
+    font-size: 14px;
+    margin-right: 50px;
+    color: #000000;
+    width: 400px;
+}
+
+@media screen and (max-width: 1170px) {
+
+    .comment_all {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    .commentaire,
+    .commentaire_1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+
+    .nom {
+        font-family: "Josefin Sans";
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 200px;
+        margin-bottom: 20px;
+    }
+   
+    .avis{
+    font-family: "Josefin Sans";
+    font-size: 14px;
+    margin-right: 50px;
+    color: #000000;
+    width: 400px;
+    }
+
+}
+
+
+
+/* ABOUT US */
+
+.Home_us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.maison {
+    width: 600px;
+    height: 400px;
+    margin-left: 90px; /* ajustez la marge gauche de l'image selon vos besoins */
+    margin-right: 70px; 
+}
+  
+.contenu {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    font-family: "Josefin Sans";
+    width: 600px;
+    margin-right: 70px; 
+}
+
+.contenu p {
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.contenu h4 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1190px) {
+
+    .Home_us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    .maison {
+        width: 90%; /* Ajuste la largeur de l'image à 90% */
+
+        max-width: none; 
+    }
+    .contenu{
+        align-items: center;
+        margin-left: 100px;
+        margin-right: 100px;
+        width: 300px;
+    }
+    .contenu h4 {
+        font-family: "Josefin Sans";
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+   
+    .contenu p {
+        font-family: "Josefin Sans";
+        font-size: 14px;
+        color: #000000;
+
+    }
+
+}
+
+
+
+/* Footer */ 
+
+footer {
+    margin-top: 100px;
+    height: 200px;
+    background-color: rgb(122, 122, 122);
+}
+
+.join h2 {
+    padding-top: 50px;
+    color: #FAF9F9;
+    text-align: center;
+}
+
+.instagram, .pinterest, .facebook {
+    width: 50px;
+    height: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+  

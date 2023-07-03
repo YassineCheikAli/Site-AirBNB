@@ -1,0 +1,536 @@
+.titre_site{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    padding-left: 50px;
+    
+}
+
+.login_button
+{
+    text-decoration: none;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    margin-right: 10px;    
+}
+
+.signup_button
+{
+    text-decoration: none;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    background-color: #FFC914;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.header
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #B4B4B4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 7.2vh;
+}
+
+.authen
+{
+    padding-right: 50px;
+    
+}
+
+.main_content
+{
+    width: 100vw;
+    height: 87%;
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    border-top: solid #D8D8D8 1px;
+}
+
+
+.main_content .message
+{
+    width: 27vw;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    
+}
+
+.main_content .conversation
+{
+    width: 46vw;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;    
+    border-left: solid #D8D8D8 1px;
+    
+}
+
+.main_content .reservation
+{
+    width: 27vw;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    border-left: solid #D8D8D8 1px;
+}
+
+.main_content .titre_message
+{
+    display: flex;
+    align-items: center;
+    width: 27vw;
+    height: 7vh;
+    position: absolute;
+    border-bottom: solid #D8D8D8 1px;
+    top: 0%;
+    
+}
+
+.main_content .titre_conversation
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    position: absolute;
+    top: 0%;
+    border-bottom: solid #D8D8D8 1px;
+}
+
+.main_content .titre_reservation
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: solid #D8D8D8 1px;
+    height: 7vh;
+    position: absolute;
+    top: 0%;
+    
+}
+
+.main_content .titre_message .title
+{
+    margin-left: 50px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.main_content .titre_conversation .title
+{
+    margin-left: 20px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.main_content .titre_reservation .title
+{
+    margin-left: 20px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+.main_content .content_conversation
+{
+    width: 100%;
+    height: 76.9vh;
+    position: absolute;
+    top: 8.4%;
+}
+
+.main_content .content_conversation .zone_message
+{
+
+    width: 33vw;
+    height: 4vh;
+    border-radius: 20px;
+    border: solid #ABABAC 1px;
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+    transform: translateX(-50%);
+    padding-left: 16px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    
+}
+
+.main_content .content_conversation .send_message
+{
+
+    width: 6vw;
+    text-align: center;
+    height: 4.3vh;
+    border-radius: 20px;
+    border: solid #ABABAC 1px;
+    position: absolute;
+    bottom: 0%;
+    right: 1%;
+    transform: translateX(-50%);
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: black;
+    
+}
+
+
+
+.main_content .content_conversation .zone_message::placeholder
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    align-self: center;
+    color: #ABABAB;
+}
+
+
+
+
+
+
+
+
+.main_content .reservation .info_reservation
+{    
+    display: grid;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+
+.main_content .reservation .photo_logement
+{
+    background-image: url("image/Fond.png");
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    width: 22vw;
+    height: 32vh;
+}
+
+.main_content .reservation .status_reservation
+{
+    width: 22vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.main_content .reservation .date_reservation
+{
+    width: 22vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #D8D8D8;
+    
+}
+
+.main_content .reservation .reglement_reservation
+{    
+    width: 22vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.main_content .reservation .paiement_reservation
+{    
+    width: 22vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_content .reservation .titre_info_reserv
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.main_content .reservation .content_info_reserv
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.main_content .reservation .date_debut
+{
+    width: 9vw;
+    height: 10vh;
+}
+
+.main_content .reservation .date_fin
+{
+    width: 9vw;
+    height: 10vh;
+}
+
+.main_content .reservation .info_date_reserv
+{
+    display: flex;
+    justify-content: space-around;
+    height: 9vh;
+} 
+
+.main_content .reservation .info_date_reserv .date_fin_titre
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.main_content .reservation .info_date_reserv .date_debut_titre
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.main_content .reservation .info_date_reserv .date
+{
+    font-family: 'Vesper Libre';
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.main_content .message .liste_contact
+{
+    display: grid;
+    position: absolute;
+    top: 8.2%;
+    width: 100%;
+    height: 92%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.main_content .message .liste_contact .contact
+{
+    display: flex;
+    width: 100%;
+    height: 9vh;
+    border-bottom: solid #D8D8D8 1px;
+    align-items: center;
+}
+
+.main_content .message .liste_contact .contact .pdp
+{
+    width: 65px;
+    height: 65px;
+    border-radius: 25px;
+    margin-right: 45px;
+    margin-left: 50px;
+}
+
+.main_content .message .liste_contact .contact .contact_name
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    margin-right: 100px;
+}
+
+.main_content .message .liste_contact .contact .name_reservation
+{
+    width: 5vw;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #6D6D6D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.gestion
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 45%;
+    border-bottom: #ABABAB solid 1px;
+}
+
+.main_content_gestion
+{
+    display: flex;
+    width: 98%;
+    height: 60%;
+    background-color: #D9D9D9;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+
+.titre_gestion
+{
+    margin-left: 30px;
+}
+
+.titre_logement
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.date_logement
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #747070;
+}
+
+.photo_gestion_logement
+{
+    width: 233px;
+    height: 200px;
+    border-radius: 15px;
+    margin-left: 60px;
+}
+
+.information_reservation
+{
+    
+    height: 70%;
+    margin-left: 60px;
+}
+
+.titre
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.date
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #747070;
+}
+
+.statut
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #747070;
+}
+
+.titre_logement
+{
+    margin-bottom: 10px;
+}
+
+.price
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.annulation
+{    
+    background: #D82525;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    height: 24%;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    color: white;
+}
+
+.droite
+{   
+    width: 12%;
+    height: 73%;
+    margin-left: 1050px;
+    text-align: right;
+}
+
+#messages
+{
+    background-color: #6D6D6D;
+    width: 100%;
+    height: 100px;
+}

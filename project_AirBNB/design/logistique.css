@@ -1,0 +1,134 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #FAF9F9;
+    height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    color: #000000;
+    font-family: "Josefin Sans";
+    font-size: 30px;
+}
+  
+
+.title .horizontal-line {
+    position: absolute;
+    margin-top: 12px;
+    width: 400px;
+    left: 90px;    
+    border: 1px solid #000000; 
+}
+
+.title .horizontal-line_2{
+    position: absolute;
+    margin-top: 12px;
+    width: 400px;
+    right: 90px;    
+    border: 1px solid #000000; 
+}
+
+.title {
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+  
+.title h2{
+    font-family: "Josefin Sans";
+    color: black;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Josefin Sans";
+    color: black;
+    font-size: 30px;
+    margin-left: 90px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 800px) {
+    .title {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .horizontal-line, .horizontal-line_2 {
+      margin: 5px 0;
+      display: none;
+    }
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+table {
+    border-collapse: collapse;
+    display: flex;
+    align-items: center;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+    font-family: "Josefin Sans";
+}
+
+.header-cell {
+    width: 300px;
+    
+}
+
+.header-cell-name {
+    width: 150px;
+}
+
+.header-cell-date {
+    width: 150px;
+}
+
+.header-cell-empty {
+    width: 50px;
+}
+
+.header-cell-info {
+    width: 600px;
+}
+
+.return {
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.svgContainer {
+    position: relative;
+}
+  
+.svgContainer:hover .svg1 {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+  
+.svgContainer:hover .svg2 {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+  
+.svg2 {
+    opacity: 0;
+}
+  

@@ -1,0 +1,133 @@
+.gestion
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 45%;
+    border-bottom: #ABABAB solid 1px;
+}
+
+.main_content_gestion
+{
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    height: 60%;
+    background-color: #D9D9D9;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+
+.titre_gestion
+{
+    margin-left: 30px;
+}
+
+.titre_logement
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.date_logement
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #747070;
+}
+
+.detail_reservation
+{
+    display: flex;
+}
+
+.photo_gestion_logement
+{
+    width: 233px;
+    height: 200px;
+    border-radius: 15px;
+    margin-left: 60px;
+}
+
+.information_reservation
+{
+    
+    height: 70%;
+    margin-left: 60px;
+}
+
+.titre
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.date
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #747070;
+}
+
+.statut
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #747070;
+}
+
+.titre_logement
+{
+    margin-bottom: 10px;
+}
+
+.price
+{
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+button {
+    background: #D82525;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 35px;
+}
+
+.annulation
+{    
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+}
+
+.droite
+{   
+    width: 12%;
+    height: 73%;
+    margin-right: 60px;
+    text-align: right;
+    justify-content: flex-end;
+}

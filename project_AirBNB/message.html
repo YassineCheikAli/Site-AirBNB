@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style_saad.css">
+	<title>Message</title>
+</head>
+    <header>
+            <div class="header">
+                <h1 class="titre_site">CONTINENTAL</h1>
+                <div class="authen">
+                    <a class="login_button" href="">Login</a>
+                    <a class="signup_button" href="">Sign Up</a>
+                </div>  
+            </div>
+    </header>
+<body>
+    <div class="main_content">
+            <div class="message">
+                    <div class="titre_message">
+                        <h2 class="title">Message</h2>
+                    </div>
+
+                    <div class="liste_contact">
+                        <div class="contact">
+                            <img class="pdp" src="image/Billy.jpg" alt="">
+                            <p class="contact_name">Billy</p>
+                            <p class="name_reservation">Paris XV En cours.</p>
+                        </div>
+                    </div>
+            </div>
+
+
+            <div class="conversation">
+                <form action="messaagerie.php" method="post">
+                    <div class="titre_conversation">
+                        <h2 class="title">Conversation</h2>
+                    </div>
+                    <div id="messages">
+                        
+                    </div>
+                    <form class="content_conversation">   
+                                          
+                        <input class="zone_message" type="text" name="message" autocomplete="off" placeholder="Saisissez votre message ...">
+                        
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </form>
+            </div>
+
+
+            <div class="reservation">
+                    <div class="titre_reservation">
+                        <h2 class="title">Réservation</h2>
+                    </div>
+                    
+                    <div class="info_reservation">
+                        <div class="photo_logement">
+
+                        </div>
+
+                        <div class="status_reservation">
+                            <h3 class="titre_info_reserv">Votre réservation est en cours de confirmation ...</h3>
+                            <p class="content_info_reserv">and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley o&</p>
+                        </div>
+
+                        <div class="date_reservation">
+                                <h3 class="titre_info_reserv">Date de réservation</h3>
+                                
+                                <div class="info_date_reserv">
+                                    <div class="date_debut">
+                                        <p class="date_debut_titre">Date début :</p>
+                                        <p class="date">15/09/2023</p>
+                                    </div>
+                                    <div class="date_fin">
+                                        <p class="date_fin_titre">Date fin :</p>
+                                        <p class="date">15/09/2023</p>
+                                    </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="reglement_reservation">
+                            <h3 class="titre_info_reserv">Réglement et instructions</h3>
+                            <p class="content_info_reserv">and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley o&</p>
+                        </div>
+
+                        <div class="paiement_reservation">
+                            <h3 class="titre_info_reserv">Information de paiement</h3>
+                            <p class="content_info_reserv">Coût total :</p>
+                        </div>
+                    </div>
+            </div>
+    </div>   
+
+    <script>
+        document.querySelector(".content_conversation").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        var messageInput = document.querySelector(".zone_message");
+        var message = messageInput.value.trim();
+
+        if (message !== "") {
+        var sender = "1";
+        var timestamp = new Date().toLocaleString();
+
+        var messageContainer = document.createElement("div");
+        messageContainer.classList.add("message-container");
+
+        var senderElement = document.createElement("div");
+        senderElement.classList.add("sender");
+        senderElement.textContent = sender;
+
+        var timestampElement = document.createElement("div");
+        timestampElement.classList.add("timestamp");
+        timestampElement.textContent = timestamp;
+
+        var contentElement = document.createElement("div");
+        contentElement.classList.add("content");
+        contentElement.textContent = message;
+
+        messageContainer.appendChild(senderElement);
+        messageContainer.appendChild(timestampElement);
+        messageContainer.appendChild(contentElement);
+
+        document.getElementById("messages").appendChild(messageContainer);
+
+        messageInput.value = ""; // Effacer le contenu de l'input après l'envoi du message
+  }
+});
+
+      </script>
+</body>
+</html>

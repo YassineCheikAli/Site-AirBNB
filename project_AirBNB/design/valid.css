@@ -1,0 +1,55 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #FAF9F9;
+    height: 100vh;
+    margin: 0;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajustez la hauteur en fonction de vos besoins */
+}
+
+.svg{
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: black;
+    font-family: "Josefin Sans";
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px; /* Ajoutez une marge en bas pour séparer le h1 du SVG */
+}
+
+p {
+    font-family: "Josefin Sans";
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.large-cell {
+    /* Ajoutez des styles supplémentaires pour rendre la cellule plus grande */
+    font-weight: bold;
+    background-color: yellow;
+}
